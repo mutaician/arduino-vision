@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#0077FF" />
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="#030712" />
+  
+  <!-- Outer Glow -->
+  <rect x="64" y="64" width="384" height="384" rx="80" fill="none" stroke="url(#glow)" stroke-width="16" filter="url(#blur)" opacity="0.6" />
+  
+  <!-- Main Chip Body -->
+  <rect x="128" y="128" width="256" height="256" rx="48" fill="#111827" stroke="url(#glow)" stroke-width="24" />
+  
+  <!-- Chip Pins (Top) -->
+  <rect x="176" y="80" width="24" height="48" rx="8" fill="url(#glow)" />
+  <rect x="244" y="80" width="24" height="48" rx="8" fill="url(#glow)" />
+  <rect x="312" y="80" width="24" height="48" rx="8" fill="url(#glow)" />
+  
+  <!-- Chip Pins (Bottom) -->
+  <rect x="176" y="384" width="24" height="48" rx="8" fill="url(#glow)" />
+  <rect x="244" y="384" width="24" height="48" rx="8" fill="url(#glow)" />
+  <rect x="312" y="384" width="24" height="48" rx="8" fill="url(#glow)" />
+  
+  <!-- Chip Pins (Left) -->
+  <rect x="80" y="176" width="48" height="24" rx="8" fill="url(#glow)" />
+  <rect x="80" y="244" width="48" height="24" rx="8" fill="url(#glow)" />
+  <rect x="80" y="312" width="48" height="24" rx="8" fill="url(#glow)" />
+  
+  <!-- Chip Pins (Right) -->
+  <rect x="384" y="176" width="48" height="24" rx="8" fill="url(#glow)" />
+  <rect x="384" y="244" width="48" height="24" rx="8" fill="url(#glow)" />
+  <rect x="384" y="312" width="48" height="24" rx="8" fill="url(#glow)" />
+
+  <!-- Eye/Vision Element Center -->
+  <path d="M 176 256 Q 256 176 336 256 Q 256 336 176 256 Z" fill="none" stroke="url(#glow)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="256" cy="256" r="32" fill="url(#glow)" />
+</svg>
