@@ -1,0 +1,13 @@
+# udev rule: give all users read+write access to USB serial adapters
+# Covers Arduino official (0x2341), CH340 clones (0x1a86), FTDI (0x0403),
+# CP210x (0x10c4), and PL2303 (0x067b)
+#
+# Install:
+#   sudo cp 99-usb-serial.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger
+#
+# After that, replug the Arduino (or the rule takes effect on next connect).
+
+SUBSYSTEM=="tty", KERNEL=="ttyUSB*", MODE="0666"
+SUBSYSTEM=="tty", KERNEL=="ttyACM*", MODE="0666"

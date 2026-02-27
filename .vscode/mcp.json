@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "vision-agents": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://visionagents.ai/mcp"
+      ]
+    }
+  }
+}
