@@ -71,6 +71,12 @@ It will automatically open demo interface on the browser, allow camera and micro
 
 ---
 
+## Demo
+
+[![ArduinoVision demo video](https://img.youtube.com/vi/4ec7WZKJr78/0.jpg)](https://youtu.be/4ec7WZKJr78)
+
+---
+
 ## Windows / WSL Note
 
 If you are running WSL on Windows, the Arduino USB port needs to be forwarded from Windows into WSL. Run these commands in a Windows terminal (PowerShell or CMD) each time you plug in the board:
